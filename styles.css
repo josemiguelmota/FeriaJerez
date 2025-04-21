@@ -4,6 +4,7 @@ body {
   padding: 0;
   background: #e9c46a; /* color albero */
   color: #222;
+  text-align: center;
 }
 
 header {
@@ -25,8 +26,8 @@ main {
 }
 
 .center-img img {
-  width: 22vw;
-  max-width: 320px;
+  width: 30vw; /* Ajuste relativo al ancho de la pantalla */
+  max-width: 300px; /* Límite máximo para pantallas pequeñas */
   height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.12);
@@ -34,18 +35,34 @@ main {
 
 .feria-text {
   text-align: center;
-  font-size: 2rem;
-  font-weight: bold;
-  margin-top: 2rem;
+  font-size: 1.8rem; /* Tamaño adaptable */
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
   color: #7c4700; /* tono marrón albero */
   font-family: 'Yeseva One', Arial, sans-serif;
 }
 
 .contador {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Tamaño adaptable */
   margin-top: 0.5rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   font-family: 'Yeseva One', Arial, sans-serif;
   color: #7c4700;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .feria-text {
+    font-size: 1.5rem;
+  }
+
+  .contador {
+    font-size: 1rem;
+  }
+
+  .center-img img {
+    width: 50vw; /* Más grande en pantallas pequeñas */
+    max-width: 250px;
+  }
 }
