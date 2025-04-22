@@ -19,6 +19,7 @@ main {
 }
 
 .center-img {
+  margin-top: 1rem; /* Ajusta el espacio entre el contador y la imagen */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,8 +46,8 @@ main {
 .contador {
   text-align: center;
   font-size: 1.2rem; /* Tamaño adaptable */
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
+  margin-top: 0.5rem; /* Reduce el espacio superior */
+  margin-bottom: 1rem; /* Reduce el espacio inferior */
   font-family: 'Yeseva One', Arial, sans-serif;
   color: #7c4700;
 }
